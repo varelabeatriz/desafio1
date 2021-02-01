@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+:root {
+    --purple: #4223bd;
+    --green: #95d4b1;
+    --blue: #555dce;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-image: url(./img/frame3.png) ;
+    background-size: cover;
+    width: 700px;
+    height: 1000px;
+    display: flex;
+     justify-content: center; 
+     align-items: center; 
+    margin: 10% auto;
+    font-family: sans-serif;
+    color: white;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 262px;
+    max-height: 386px;
+    background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.33) 0%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(42px);
+    border-radius: 16px 50px 16px 16px;
+    margin: 10% auto;
+    position: relative;
+    padding: 26px;
+}
+
+.card img{
+    position: absolute;
+    top: -210px;
+    right: -120px;
+}
+
+.card .product{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    color: white;
+}
+
+.card .brand{
+    color: #95d4b1;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30%;
+}
+
+.card .price{
+    display: flex;
+    align-self: flex-end;
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.card .price span{
+    font-size: 14px;
+    color: lightgray;
+    margin: 6px;
+}
+
+.row{
+    display: flex;
+}
+
+.row .purple{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: var(--purple);
+    margin: 4px;
+    border: 2px solid white;
+}
+
+.row .green{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: var(--green);
+    margin: 4px;
+    border: 2px solid transparent;
+}
+
+.row .blue{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: var(--blue);
+    margin: 4px;
+    border: 2px solid transparent;
+}
+
+.sizes{
+    display: flex;
+}
+
+.sizes div{
+    background-color: transparent;
+    border: 1px solid white;
+    height: 20px;
+    width: 20px;
+    border-radius: 8px;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+}
+
+.sizes div.active{
+    background-color: white;
+    color: #808080;
+    transition: 200ms;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.info p{
+    margin-top: 10px;
+}
+
+.cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 50px;
+    background-color:#95d4b1;
+    display: flex;
+    align-self: right;
+    border-radius: 16px;
+    margin-top: 14%;
+}
+
+.cart img{
+    position: static;
+    width: 16px;
+}
+
+.cart img#arrow1{
+    opacity: 0.5;
+}
+
+.cart img#arrow2{
+    opacity: 0.7;
+}
+
+.cart img#cart{
+    width: 24px;
+    margin-top: 3px;
+}
