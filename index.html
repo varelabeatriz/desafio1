@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 
     <title>Document</title>
 </head>
@@ -14,7 +14,7 @@
 
     <div class="container">
         <div class="card">
-            <img src="./img/roxo.png">
+            <img id="imagemDinamica" src="./img/roxo.png">
             <p class="brand">Nike</p>
             <p class="product">Epic React Flyknit 2</p>
             <p class="price"><span>R$</span> 359,00</p>
@@ -23,16 +23,16 @@
                 <div>
                     <p>Cores:</p>
                     <div class="row">
-                        <div class="purple"></div>
-                        <div class="green"></div>
-                        <div class="blue"></div>
+                        <div class="purple" onclick="trocaImagem(1)"></div>
+                        <div class="green" onclick="trocaImagem(2)"></div>
+                        <div class="blue" onclick="trocaImagem(3)"></div>
                     </div>
                     <p>Tamanhos:</p>
                     <div class="sizes">
-                        <div class="active">35</div>
-                        <div>36</div>
-                        <div>37</div>
-                        <div>38</div>
+                        <div id="tamanho35" class="active" onclick="trocaTamanho(35)">35</div>
+                        <div id="tamanho36" onclick="trocaTamanho(36)">36</div>
+                        <div id="tamanho37" onclick="trocaTamanho(37)">37</div>
+                        <div id="tamanho38" onclick="trocaTamanho(38)">38</div>
                     </div>
                 </div>
                     <div class="cart">
@@ -44,6 +44,10 @@
             </div>
         </div>
     </div>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 </body>
 
