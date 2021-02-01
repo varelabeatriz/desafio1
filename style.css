@@ -3,7 +3,7 @@
 :root {
     --purple: #4223bd;
     --green: #95d4b1;
-    --blue: #555dce;
+    --blue: #4177ec;
 }
 
 * {
@@ -76,31 +76,29 @@
     display: flex;
 }
 
-.row .purple{
+.row div{
     border-radius: 50%;
     width: 20px;
     height: 20px;
-    background-color: var(--purple);
     margin: 4px;
-    border: 2px solid white;
+    border: 2px solid transparent;
+    transition: 400ms;
+}
+
+.row .purple{
+    background-color: var(--purple);
 }
 
 .row .green{
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
     background-color: var(--green);
-    margin: 4px;
-    border: 2px solid transparent;
 }
 
 .row .blue{
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
     background-color: var(--blue);
-    margin: 4px;
-    border: 2px solid transparent;
+}
+
+.row div.active{
+    border: 2px solid white;
 }
 
 .sizes{
